@@ -1,0 +1,13 @@
+/* imports */
+
+@import "variables";
+@import "mixin";
+@import "mobile";
+@import "tablet";
+@import "desktop";
+
+/* generales */
+#inicio{
+    background-color: $blanco;
+    box-sizing: border-box;
+}

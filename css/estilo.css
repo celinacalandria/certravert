@@ -1,0 +1,103 @@
+/* imports */ /* variables */ /* mix in */ /* mobile */
+.formIdInst {
+  border: 2px solid #139856;
+  margin: 2rem;
+  padding: 2rem;
+}
+.formIdInst .formFlex h3 {
+  margin: 0;
+  padding: 0;
+  color: #139856;
+  padding: 0 0 1rem 0;
+  text-align: center;
+}
+.formIdInst .formFlex .divForm {
+  margin: 0;
+  padding: 0;
+  padding: 0.5rem 0;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "label input";
+}
+.formIdInst .formFlex .divForm label {
+  margin: 0;
+  padding: 0;
+  grid-area: label;
+}
+.formIdInst .formFlex .divForm input {
+  margin: 0;
+  padding: 0;
+  grid-area: input;
+}
+.formIdInst .formFlex .divForm2 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "p div";
+}
+.formIdInst .formFlex .divForm2 p {
+  margin: 0;
+  padding: 0;
+  grid-area: p;
+}
+.formIdInst .formFlex .divForm2 div {
+  margin: 0;
+  padding: 0;
+  grid-area: div;
+}
+.formIdInst .formFlex .divForm2 .divFormInterno {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.formIdInst .formFlex .divForm2 .divFormInterno label {
+  margin: 0;
+  padding: 0;
+  margin: 0 0.5rem;
+  width: 20%;
+}
+.formIdInst .formFlex .divForm2 .divFormInterno input {
+  margin: 0;
+  padding: 0;
+  margin: 0 0.5rem;
+  width: 30%;
+}
+.formIdInst .formFlex .divForm3 {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "label div";
+}
+.formIdInst .formFlex .divForm3 .divFormInterno {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.formIdInst .formFlex .divForm3 .divFormInterno label {
+  margin: 0;
+  padding: 0;
+  margin: 0 0.5rem;
+  width: 10%;
+  text-align: center;
+}
+.formIdInst .formFlex .divForm3 .divFormInterno input {
+  margin: 0;
+  padding: 0;
+  margin: 0 0.5rem;
+  width: 45%;
+}
+
+/* generales */
+#inicio {
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+}/*# sourceMappingURL=estilo.css.map */

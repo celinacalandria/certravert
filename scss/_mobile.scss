@@ -1,0 +1,86 @@
+/* mobile */
+
+.formIdInst{
+    border: 2px solid $verde;
+    margin: 2rem;
+    padding: 2rem;
+    .formFlex{
+        h3{
+            @include cero;
+            color: $verde;
+            padding: 0 0 1rem 0;
+            text-align: center;
+        }
+        .divForm{
+            @include cero;
+            padding: 0.5rem 0;
+            display: grid;
+            grid-template-columns: 2fr 4fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "label input";
+            label{
+                @include cero;
+                grid-area: label;
+            }
+            input{
+                @include cero;
+                grid-area: input;
+            }
+        }
+        .divForm2{
+            @include cero;
+            display: grid;
+            grid-template-columns: 2fr 4fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "p div";
+            p{
+                @include cero;
+                grid-area: p;
+            }
+            div{
+                @include cero;
+                grid-area: div;
+            }
+            .divFormInterno{
+                @include cero;
+                @include flex;
+                justify-content: space-evenly;
+                label{
+                    @include cero;
+                    margin: 0 0.5rem;
+                    width: 20%;
+                }
+                input{
+                    @include cero;
+                    margin: 0 0.5rem;
+                    width: 30%;
+                }
+            }
+        }
+        .divForm3{
+            display: grid;
+            grid-template-columns: 2fr 4fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "label div";
+            .divFormInterno{
+                @include cero;
+                @include flex;
+                justify-content: space-evenly;
+                label{
+                    @include cero;
+                    margin: 0 0.5rem;
+                    width: 10%;
+                    text-align: center
+                }
+                input{
+                    @include cero;
+                    margin: 0 0.5rem;
+                    width: 45%;
+                }
+            }
+        }
+    }
+}

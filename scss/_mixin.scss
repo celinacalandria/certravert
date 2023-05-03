@@ -1,0 +1,20 @@
+/* mix in */
+
+@mixin letraPrincipal{
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin letraSecundaria{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin cero{
+    margin: 0;
+    padding: 0;
+}

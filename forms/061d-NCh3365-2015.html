@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CERTRAVERT</title>
+
+    <!-- seo -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="copyright" content="">
+
+    <!-- shortcut icon -->
+    <link rel="shortcut icon" href="../img/logoCircular.png">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/cb92ffd13d.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- estilo css -->
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="container-fluid m-0 p-0" id="inicio">
+
+        <!-- IDENTIFICACION INSTALACION -->
+        <form class="formIdInst" action="" method="POST" target="_blank">
+            <div class="formFlex">
+                <h3>
+                    IDENTIFICACIÓN INSTALACIÓN
+                </h3>
+    
+                <div class="divForm">
+                    <label for="inspector">
+                        Inspector/a:
+                    </label>
+                    <input type="text" name="inspector" id="inspector">
+                </div>
+
+                <div class="divForm">
+                    <label for="nombreEdificio">
+                        Nombre del edificio
+                    </label>
+                    <input type="text" name="nombreEdificio" id="nombreEdificio">
+                </div>
+
+                <div class="divForm">
+                    <label for="direccion">
+                        Dirección
+                    </label>
+                    <input type="text" name="direccion" id="direccion">
+                </div>
+
+                <div class="divForm">
+                    <label for="empresaMantenedora">
+                        Empresa mantenedora 
+                    </label>
+                    <input type="text" name="empresaMantenedora" id="empresaMantenedora">
+                </div>
+
+                <div class="divForm">
+                    <label for="tecnicoMantencion">
+                        Técnico mantención
+                    </label>
+                    <input type="text" name="tecnicoMantencion" id="tecnicoMantencion">
+                </div>
+
+                <div class="divForm3">
+                    <label for="numeroAscensor">
+                        Número de ascensor
+                    </label>
+                    <div class="divFormInterno">
+                        <input type="number" name="numeroAscensor" id="numeroAscensor">
+                        <label for="deAscensores">
+                            de
+                        </label>
+                        <input type="number" name="deAscensores" id="deAscensores">
+                    </div>
+                    <!-- N° de ascensor de (cant. total) -->
+                </div>
+
+                <div class="divForm">
+                    <label for="cantidadAscensor">
+                        Cantidad de ascensores
+                    </label>
+                    <input type="number" name="cantidadAscensor" id="cantidadAscensor">
+                </div>
+
+                <div class="divForm">
+                    <label for="marca">
+                        Marca del equipo
+                    </label>
+                    <input type="text" name="marca" id="marca">
+                </div>
+
+                <div class="divForm">
+                    <label for="modelo">
+                        Modelo del equipo
+                    </label>
+                    <input type="text" name="modelo" id="modelo">
+                </div>
+                
+                <div class="divForm">
+                    <label for="paradas">
+                        Número de paradas
+                    </label>
+                    <input type="number" name="paradas" id="paradas">
+                </div>
+
+                <div class="divForm">
+                    <label for="potencia">
+                        Potencia del motor
+                    </label>
+                    <input type="text" name="potencia" id="potencia">
+                </div>
+
+                <div class="divForm">
+                    <label for="tipoControl">
+                        Tipo de control
+                    </label>
+                    <input type="text" name="tipoControl" id="tipoControl">
+                </div>
+
+                <div class="divForm2">
+                    <p>Cables a tracción</p>
+                    <div class="divFormInterno">
+                        <label for="cablesTraccion">
+                            Número de cables
+                        </label>
+                        <input type="number" name="cablesTraccion" id="cablesTraccion">
+                        <label for="diametroCables">
+                            Diámetro de los cables
+                        </label>
+                        <input type="number" name="diametroCables" id="diametroCables">
+                    </div>    
+                </div>
+
+                <div class="divForm">
+                    <label for="cableLimitador">
+                        Diámetro del cable limitador
+                    </label>
+                    <input type="text" name="cableLimitador" id="cableLimitador">
+                </div>
+
+                <div class="divForm">
+                    <label for="velocidad">
+                        Velocidad del ascensor
+                    </label>
+                    <input type="text" name="velocidad" id="velocidad">
+                </div>
+
+                <div class="divForm">
+                    <label for="metodoControl">
+                        Método de control
+                    </label>
+                    <input type="text" name="metodoControl" id="metodoControl">
+                </div>
+
+                <div class="divForm2">
+                    <p>Carga útil de la cabina</p>
+                    <div class="divFormInterno">
+                        <label for="numeroPasajeros">
+                            Número de pasajeros
+                        </label>
+                        <input type="number" name="numeroPasajeros" id="numeroPasajeros">
+                        <label for="cargaUtil">
+                            Carga útil
+                        </label>
+                        <input type="text" name="cargaUtil" id="cargaUtil">
+                    </div>
+                </div>
+
+                <div class="divForm">
+                    <label for="pieMetroOcupado">
+                        Pie de metro ocupado
+                    </label>
+                    <input type="text" name="pieMetroOcupado" id="pieMetroOcupado">
+                </div>
+
+                <div class="divForm">
+                    <label for="luxometro">
+                        Luxómetro ocupado
+                    </label>
+                    <input type="text" name="luxometro" id="luxometro">
+                </div>
+
+                <div class="divForm">
+                    <label for="huincha">
+                        Huincha ocupada
+                    </label>
+                    <input type="text" name="huincha" id="huincha">
+                </div>
+            </div>
+        </form>
+    
+    </div>
+</body>
+</html>
