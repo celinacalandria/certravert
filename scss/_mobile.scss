@@ -1,15 +1,40 @@
 /* mobile */
 
-.formIdInst{
-    border: 2px solid $verde;
-    margin: 2rem;
+.mainIndex{
     padding: 2rem;
+    a{
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        border: 1px $verde solid;
+        background-color: $verde;
+        color: $blanco;
+        margin: 1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        @include letraSecundaria;
+        &:hover{
+            color: $verde;
+            background-color: $blanco;
+        }
+    }
+}
+
+.formGral{
+    border: 2px solid $verde;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    @include letraPrincipal;
+    font-size: 1rem;
     .formFlex{
         h3{
             @include cero;
             color: $verde;
             padding: 0 0 1rem 0;
             text-align: center;
+            font-weight: 600;
         }
         .divForm{
             @include cero;
@@ -22,6 +47,10 @@
             label{
                 @include cero;
                 grid-area: label;
+                border-right: 1px solid $verde;
+                margin-right: 0.5rem;
+                border-left: 1px solid $verde;
+                padding-left: 0.5rem;
             }
             input{
                 @include cero;
@@ -38,6 +67,10 @@
             p{
                 @include cero;
                 grid-area: p;
+                border-right: 1px solid $verde;
+                margin-right: 0.5rem;
+                border-left: 1px solid $verde;
+                padding-left: 0.5rem;
             }
             div{
                 @include cero;
@@ -51,6 +84,7 @@
                     @include cero;
                     margin: 0 0.5rem;
                     width: 20%;
+                    font-size: 0.8rem;
                 }
                 input{
                     @include cero;
@@ -65,6 +99,12 @@
             grid-template-rows: auto;
             grid-template-areas: 
                 "label div";
+            label{   
+                border-right: 1px solid $verde;
+                margin-right: 0.5rem;
+                border-left: 1px solid $verde;
+                padding-left: 0.5rem;
+            }    
             .divFormInterno{
                 @include cero;
                 @include flex;
@@ -73,13 +113,29 @@
                     @include cero;
                     margin: 0 0.5rem;
                     width: 10%;
-                    text-align: center
+                    text-align: center;
+                    font-size: 0.8rem;
+                    border: none;
                 }
                 input{
                     @include cero;
                     margin: 0 0.5rem;
                     width: 45%;
                 }
+            }
+        }
+        .formBoton{
+            @include centrado;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px $verde solid;
+            background-color: $verde;
+            color: $blanco;
+            font-size: 1rem;
+            @include letraPrincipal;
+            &:hover{
+                color: $verde;
+                background-color: $blanco;
             }
         }
     }

@@ -34,7 +34,7 @@
     <div class="container-fluid m-0 p-0" id="inicio">
 
         <!-- IDENTIFICACION INSTALACION -->
-        <form class="formIdInst" action="" method="POST" target="_blank">
+        <form class="formGral" action="" method="POST" target="_blank" id="formIdentificacionInstalacion">
             <div class="formFlex">
                 <h3>
                     IDENTIFICACIÓN INSTALACIÓN
@@ -135,7 +135,7 @@
                     <p>Cables a tracción</p>
                     <div class="divFormInterno">
                         <label for="cablesTraccion">
-                            Número de cables
+                            Nº de cables
                         </label>
                         <input type="number" name="cablesTraccion" id="cablesTraccion">
                         <label for="diametroCables">
@@ -170,7 +170,7 @@
                     <p>Carga útil de la cabina</p>
                     <div class="divFormInterno">
                         <label for="numeroPasajeros">
-                            Número de pasajeros
+                            Nº de pasajeros
                         </label>
                         <input type="number" name="numeroPasajeros" id="numeroPasajeros">
                         <label for="cargaUtil">
@@ -200,6 +200,8 @@
                     </label>
                     <input type="text" name="huincha" id="huincha">
                 </div>
+
+                <input class="formBoton" type="submit" value="Enviar">
             </div>
         </form>
     
