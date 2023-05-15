@@ -140,3 +140,30 @@
         }
     }
 }
+
+.sectionCriterioFaltas{
+    border: 2px solid $verde;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    @include letraPrincipal;
+    font-size: 1rem;
+    p{
+        margin: 0;
+        padding: 0.5rem;
+    }
+    .divForm{
+        @include flex;
+        flex-direction: row;
+        @include letraPrincipal;
+        label{
+            padding: 0.5rem;
+        }
+    }
+    .divFormTexto{
+        input{
+            border: none;
+            border-bottom: 1px solid $verde;
+            padding: 0;
+        }
+    }
+}
