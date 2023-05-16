@@ -21,138 +21,6 @@
   background-color: #FFFFFF;
 }
 
-.formGral {
-  border: 2px solid #139856;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-}
-.formGral .formFlex h3 {
-  margin: 0;
-  padding: 0;
-  color: #139856;
-  padding: 0 0 1rem 0;
-  text-align: center;
-  font-weight: 600;
-}
-.formGral .formFlex .divForm {
-  margin: 0;
-  padding: 0;
-  padding: 0.5rem 0;
-  display: grid;
-  grid-template-columns: 2fr 4fr;
-  grid-template-rows: auto;
-  grid-template-areas: "label input";
-}
-.formGral .formFlex .divForm label {
-  margin: 0;
-  padding: 0;
-  grid-area: label;
-  border-right: 1px solid #139856;
-  margin-right: 0.5rem;
-  border-left: 1px solid #139856;
-  padding-left: 0.5rem;
-}
-.formGral .formFlex .divForm input {
-  margin: 0;
-  padding: 0;
-  grid-area: input;
-}
-.formGral .formFlex .divForm2 {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 2fr 4fr;
-  grid-template-rows: auto;
-  grid-template-areas: "p div";
-}
-.formGral .formFlex .divForm2 p {
-  margin: 0;
-  padding: 0;
-  grid-area: p;
-  border-right: 1px solid #139856;
-  margin-right: 0.5rem;
-  border-left: 1px solid #139856;
-  padding-left: 0.5rem;
-}
-.formGral .formFlex .divForm2 div {
-  margin: 0;
-  padding: 0;
-  grid-area: div;
-}
-.formGral .formFlex .divForm2 .divFormInterno {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
-}
-.formGral .formFlex .divForm2 .divFormInterno label {
-  margin: 0;
-  padding: 0;
-  margin: 0 0.5rem;
-  width: 20%;
-  font-size: 0.8rem;
-}
-.formGral .formFlex .divForm2 .divFormInterno input {
-  margin: 0;
-  padding: 0;
-  margin: 0 0.5rem;
-  width: 30%;
-}
-.formGral .formFlex .divForm3 {
-  display: grid;
-  grid-template-columns: 2fr 4fr;
-  grid-template-rows: auto;
-  grid-template-areas: "label div";
-}
-.formGral .formFlex .divForm3 label {
-  border-right: 1px solid #139856;
-  margin-right: 0.5rem;
-  border-left: 1px solid #139856;
-  padding-left: 0.5rem;
-}
-.formGral .formFlex .divForm3 .divFormInterno {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
-}
-.formGral .formFlex .divForm3 .divFormInterno label {
-  margin: 0;
-  padding: 0;
-  margin: 0 0.5rem;
-  width: 10%;
-  text-align: center;
-  font-size: 0.8rem;
-  border: none;
-}
-.formGral .formFlex .divForm3 .divFormInterno input {
-  margin: 0;
-  padding: 0;
-  margin: 0 0.5rem;
-  width: 45%;
-}
-.formGral .formFlex .formBoton {
-  display: block;
-  margin: auto;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  border: 1px #139856 solid;
-  background-color: #139856;
-  color: #FFFFFF;
-  font-size: 1rem;
-  font-family: "Roboto", sans-serif;
-}
-.formGral .formFlex .formBoton:hover {
-  color: #139856;
-  background-color: #FFFFFF;
-}
-
 .sectionCriterioFaltas {
   border: 2px solid #139856;
   margin: 0.5rem;
@@ -178,6 +46,154 @@
   border: none;
   border-bottom: 1px solid #139856;
   padding: 0;
+}
+
+.sectionForm {
+  border: 2px solid #139856;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+}
+.sectionForm h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  color: #276c9f;
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 1px solid #276c9f;
+  padding: 0.5rem;
+}
+.sectionForm .formGral {
+  font-size: 1rem;
+}
+.sectionForm .formGral .formFlex {
+  padding: 0.5rem 0;
+}
+.sectionForm .formGral .formFlex h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  color: #139856;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+.sectionForm .formGral .formFlex .divForm {
+  margin: 0;
+  padding: 0;
+  padding: 0.5rem 0;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "label input";
+}
+.sectionForm .formGral .formFlex .divForm label {
+  margin: 0;
+  padding: 0;
+  grid-area: label;
+  border-right: 1px solid #139856;
+  margin-right: 0.5rem;
+  border-left: 1px solid #139856;
+  padding-left: 0.5rem;
+}
+.sectionForm .formGral .formFlex .divForm input {
+  margin: 0;
+  padding: 0;
+  grid-area: input;
+}
+.sectionForm .formGral .formFlex .divForm2 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "p div";
+}
+.sectionForm .formGral .formFlex .divForm2 p {
+  margin: 0;
+  padding: 0;
+  grid-area: p;
+  border-right: 1px solid #139856;
+  margin-right: 0.5rem;
+  border-left: 1px solid #139856;
+  padding-left: 0.5rem;
+}
+.sectionForm .formGral .formFlex .divForm2 div {
+  margin: 0;
+  padding: 0;
+  grid-area: div;
+}
+.sectionForm .formGral .formFlex .divForm2 .divFormInterno {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.sectionForm .formGral .formFlex .divForm2 .divFormInterno label {
+  margin: 0;
+  padding: 0;
+  margin: 0 0.5rem;
+  width: 20%;
+  font-size: 0.8rem;
+}
+.sectionForm .formGral .formFlex .divForm2 .divFormInterno input {
+  margin: 0;
+  padding: 0;
+  margin: 0 0.5rem;
+  width: 30%;
+}
+.sectionForm .formGral .formFlex .divForm3 {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "label div";
+}
+.sectionForm .formGral .formFlex .divForm3 label {
+  border-right: 1px solid #139856;
+  margin-right: 0.5rem;
+  border-left: 1px solid #139856;
+  padding-left: 0.5rem;
+}
+.sectionForm .formGral .formFlex .divForm3 .divFormInterno {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.sectionForm .formGral .formFlex .divForm3 .divFormInterno label {
+  margin: 0;
+  padding: 0;
+  margin: 0 0.5rem;
+  width: 10%;
+  text-align: center;
+  font-size: 0.8rem;
+  border: none;
+}
+.sectionForm .formGral .formFlex .divForm3 .divFormInterno input {
+  margin: 0;
+  padding: 0;
+  margin: 0 0.5rem;
+  width: 45%;
+}
+.sectionForm .formGral .formFlex .formBoton {
+  display: block;
+  margin: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px #139856 solid;
+  background-color: #139856;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.sectionForm .formGral .formFlex .formBoton:hover {
+  color: #139856;
+  background-color: #FFFFFF;
 }
 
 /* generales */

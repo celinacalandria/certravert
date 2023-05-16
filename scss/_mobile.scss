@@ -22,125 +22,6 @@
     }
 }
 
-.formGral{
-    border: 2px solid $verde;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    @include letraPrincipal;
-    font-size: 1rem;
-    .formFlex{
-        h3{
-            @include cero;
-            color: $verde;
-            padding: 0 0 1rem 0;
-            text-align: center;
-            font-weight: 600;
-        }
-        .divForm{
-            @include cero;
-            padding: 0.5rem 0;
-            display: grid;
-            grid-template-columns: 2fr 4fr;
-            grid-template-rows: auto;
-            grid-template-areas: 
-                "label input";
-            label{
-                @include cero;
-                grid-area: label;
-                border-right: 1px solid $verde;
-                margin-right: 0.5rem;
-                border-left: 1px solid $verde;
-                padding-left: 0.5rem;
-            }
-            input{
-                @include cero;
-                grid-area: input;
-            }
-        }
-        .divForm2{
-            @include cero;
-            display: grid;
-            grid-template-columns: 2fr 4fr;
-            grid-template-rows: auto;
-            grid-template-areas: 
-                "p div";
-            p{
-                @include cero;
-                grid-area: p;
-                border-right: 1px solid $verde;
-                margin-right: 0.5rem;
-                border-left: 1px solid $verde;
-                padding-left: 0.5rem;
-            }
-            div{
-                @include cero;
-                grid-area: div;
-            }
-            .divFormInterno{
-                @include cero;
-                @include flex;
-                justify-content: space-evenly;
-                label{
-                    @include cero;
-                    margin: 0 0.5rem;
-                    width: 20%;
-                    font-size: 0.8rem;
-                }
-                input{
-                    @include cero;
-                    margin: 0 0.5rem;
-                    width: 30%;
-                }
-            }
-        }
-        .divForm3{
-            display: grid;
-            grid-template-columns: 2fr 4fr;
-            grid-template-rows: auto;
-            grid-template-areas: 
-                "label div";
-            label{   
-                border-right: 1px solid $verde;
-                margin-right: 0.5rem;
-                border-left: 1px solid $verde;
-                padding-left: 0.5rem;
-            }    
-            .divFormInterno{
-                @include cero;
-                @include flex;
-                justify-content: space-evenly;
-                label{
-                    @include cero;
-                    margin: 0 0.5rem;
-                    width: 10%;
-                    text-align: center;
-                    font-size: 0.8rem;
-                    border: none;
-                }
-                input{
-                    @include cero;
-                    margin: 0 0.5rem;
-                    width: 45%;
-                }
-            }
-        }
-        .formBoton{
-            @include centrado;
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
-            border: 1px $verde solid;
-            background-color: $verde;
-            color: $blanco;
-            font-size: 1rem;
-            @include letraPrincipal;
-            &:hover{
-                color: $verde;
-                background-color: $blanco;
-            }
-        }
-    }
-}
-
 .sectionCriterioFaltas{
     border: 2px solid $verde;
     margin: 0.5rem;
@@ -164,6 +45,138 @@
             border: none;
             border-bottom: 1px solid $verde;
             padding: 0;
+        }
+    }
+}
+
+.sectionForm{
+    border: 2px solid $verde;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+    @include letraPrincipal;
+    h2{
+        font-size: 1.5rem;
+        @include cero;
+        color: $azul;
+        text-align: center;
+        font-weight: 700;
+        border-bottom: 1px solid $azul;
+        padding: 0.5rem;
+    }
+    .formGral{
+    font-size: 1rem;
+        .formFlex{
+            padding: 0.5rem 0;
+            h3{
+                font-size: 1.3rem;
+                @include cero;
+                color: $verde;
+                padding: 0.5rem;
+                text-align: center;
+                font-weight: 600;
+            }
+            .divForm{
+                @include cero;
+                padding: 0.5rem 0;
+                display: grid;
+                grid-template-columns: 2fr 4fr;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                    "label input";
+                label{
+                    @include cero;
+                    grid-area: label;
+                    border-right: 1px solid $verde;
+                    margin-right: 0.5rem;
+                    border-left: 1px solid $verde;
+                    padding-left: 0.5rem;
+                }
+                input{
+                    @include cero;
+                    grid-area: input;
+                }
+            }
+            .divForm2{
+                @include cero;
+                display: grid;  
+                grid-template-columns: 2fr 4fr;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                    "p div";
+                p{
+                    @include cero;
+                    grid-area: p;
+                    border-right: 1px solid $verde;
+                    margin-right: 0.5rem;
+                    border-left: 1px solid $verde;
+                    padding-left: 0.5rem;
+                }
+                div{
+                    @include cero;
+                    grid-area: div;
+                }
+                .divFormInterno{
+                    @include cero;
+                    @include flex;
+                    justify-content: space-evenly;
+                    label{
+                        @include cero;
+                        margin: 0 0.5rem;
+                        width: 20%;
+                        font-size: 0.8rem;
+                    }
+                    input{
+                        @include cero;
+                        margin: 0 0.5rem;
+                        width: 30%;
+                    }
+                }
+            }   
+            .divForm3{
+                display: grid;
+                grid-template-columns: 2fr 4fr;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                    "label div";
+                label{   
+                    border-right: 1px solid $verde;
+                    margin-right: 0.5rem;
+                    border-left: 1px solid $verde;
+                    padding-left: 0.5rem;
+                }    
+                .divFormInterno{
+                    @include cero;
+                    @include flex;
+                    justify-content: space-evenly;
+                    label{
+                        @include cero;
+                        margin: 0 0.5rem;
+                        width: 10%;
+                        text-align: center;
+                        font-size: 0.8rem;
+                        border: none;
+                    }
+                    input{
+                        @include cero;
+                        margin: 0 0.5rem;
+                        width: 45%;
+                    }
+                }
+            }
+            .formBoton{
+                @include centrado;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                border: 1px $verde solid;
+                background-color: $verde;
+                color: $blanco;
+                font-size: 1rem;
+                @include letraPrincipal;
+                &:hover{
+                    color: $verde;
+                    background-color: $blanco;
+                }
+            }
         }
     }
 }
