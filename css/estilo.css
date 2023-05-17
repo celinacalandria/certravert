@@ -32,20 +32,41 @@
   margin: 0;
   padding: 0.5rem;
 }
-.sectionCriterioFaltas .divForm {
+.sectionCriterioFaltas .divFormS {
+  padding-bottom: 0.5rem;
+}
+.sectionCriterioFaltas .divFormS .divForm {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   font-family: "Roboto", sans-serif;
 }
-.sectionCriterioFaltas .divForm label {
+.sectionCriterioFaltas .divFormS .divForm label {
+  margin: 0;
   padding: 0.5rem;
 }
-.sectionCriterioFaltas .divFormTexto input {
+.sectionCriterioFaltas .divFormS .divFormTexto input {
   border: none;
   border-bottom: 1px solid #139856;
+  margin: 0;
   padding: 0;
+}
+.sectionCriterioFaltas .divFormS .formBoton {
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+  border: 1px #139856 solid;
+  border-radius: 2rem;
+  background-color: #139856;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  font-family: "Roboto", sans-serif;
+}
+.sectionCriterioFaltas .divFormS .formBoton:hover {
+  color: #139856;
+  background-color: #FFFFFF;
 }
 
 .sectionForm {
@@ -61,11 +82,12 @@
   color: #276c9f;
   text-align: center;
   font-weight: 700;
-  border-bottom: 1px solid #276c9f;
+  border-bottom: 2px solid #276c9f;
   padding: 0.5rem;
 }
 .sectionForm .formGral {
   font-size: 1rem;
+  padding-bottom: 1rem;
 }
 .sectionForm .formGral .formFlex {
   padding: 0.5rem 0;
@@ -78,6 +100,7 @@
   padding: 0.5rem;
   text-align: center;
   font-weight: 600;
+  border-bottom: 1px solid #139856;
 }
 .sectionForm .formGral .formFlex .divForm {
   margin: 0;
@@ -102,7 +125,42 @@
   padding: 0;
   grid-area: input;
 }
-.sectionForm .formGral .formFlex .divForm2 {
+.sectionForm .formGral .formFlex .divFormPP {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #139856;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "p p";
+}
+.sectionForm .formGral .formFlex .divFormPP p {
+  margin: 0;
+  padding: 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+.sectionForm .formGral .formFlex .divFormObservaciones {
+  margin: 0;
+  padding-top: 0.5rem;
+  border-top: 1px solid #139856;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "label input";
+}
+.sectionForm .formGral .formFlex .divFormObservaciones label {
+  margin: 0;
+  padding: 0;
+  padding-left: 0.5rem;
+  grid-area: label;
+}
+.sectionForm .formGral .formFlex .divFormObservaciones input {
+  margin: 0;
+  padding: 0;
+  grid-area: input;
+}
+.sectionForm .formGral .formFlex .divFormPDiv {
   margin: 0;
   padding: 0;
   display: grid;
@@ -110,7 +168,7 @@
   grid-template-rows: auto;
   grid-template-areas: "p div";
 }
-.sectionForm .formGral .formFlex .divForm2 p {
+.sectionForm .formGral .formFlex .divFormPDiv p {
   margin: 0;
   padding: 0;
   grid-area: p;
@@ -119,12 +177,12 @@
   border-left: 1px solid #139856;
   padding-left: 0.5rem;
 }
-.sectionForm .formGral .formFlex .divForm2 div {
+.sectionForm .formGral .formFlex .divFormPDiv div {
   margin: 0;
   padding: 0;
   grid-area: div;
 }
-.sectionForm .formGral .formFlex .divForm2 .divFormInterno {
+.sectionForm .formGral .formFlex .divFormPDiv .divFormInterno {
   margin: 0;
   padding: 0;
   display: flex;
@@ -132,32 +190,32 @@
   justify-content: center;
   justify-content: space-evenly;
 }
-.sectionForm .formGral .formFlex .divForm2 .divFormInterno label {
+.sectionForm .formGral .formFlex .divFormPDiv .divFormInterno label {
   margin: 0;
   padding: 0;
   margin: 0 0.5rem;
   width: 20%;
   font-size: 0.8rem;
 }
-.sectionForm .formGral .formFlex .divForm2 .divFormInterno input {
+.sectionForm .formGral .formFlex .divFormPDiv .divFormInterno input {
   margin: 0;
   padding: 0;
   margin: 0 0.5rem;
   width: 30%;
 }
-.sectionForm .formGral .formFlex .divForm3 {
+.sectionForm .formGral .formFlex .divFormLabelDiv {
   display: grid;
   grid-template-columns: 2fr 4fr;
   grid-template-rows: auto;
   grid-template-areas: "label div";
 }
-.sectionForm .formGral .formFlex .divForm3 label {
+.sectionForm .formGral .formFlex .divFormLabelDiv label {
   border-right: 1px solid #139856;
   margin-right: 0.5rem;
   border-left: 1px solid #139856;
   padding-left: 0.5rem;
 }
-.sectionForm .formGral .formFlex .divForm3 .divFormInterno {
+.sectionForm .formGral .formFlex .divFormLabelDiv .divFormInterno {
   margin: 0;
   padding: 0;
   display: flex;
@@ -165,7 +223,7 @@
   justify-content: center;
   justify-content: space-evenly;
 }
-.sectionForm .formGral .formFlex .divForm3 .divFormInterno label {
+.sectionForm .formGral .formFlex .divFormLabelDiv .divFormInterno label {
   margin: 0;
   padding: 0;
   margin: 0 0.5rem;
@@ -174,7 +232,7 @@
   font-size: 0.8rem;
   border: none;
 }
-.sectionForm .formGral .formFlex .divForm3 .divFormInterno input {
+.sectionForm .formGral .formFlex .divFormLabelDiv .divFormInterno input {
   margin: 0;
   padding: 0;
   margin: 0 0.5rem;
@@ -183,17 +241,24 @@
 .sectionForm .formGral .formFlex .formBoton {
   display: block;
   margin: auto;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
   border: 1px #139856 solid;
+  border-radius: 2rem;
   background-color: #139856;
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  width: 2.5rem;
   font-family: "Roboto", sans-serif;
 }
 .sectionForm .formGral .formFlex .formBoton:hover {
   color: #139856;
   background-color: #FFFFFF;
+}
+.sectionForm .formCuadro .formFlex .divFormContenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
 }
 
 /* generales */

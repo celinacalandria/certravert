@@ -76,7 +76,7 @@
                         <input type="text" name="tecnicoMantencion"     id="tecnicoMantencion">
                     </div>
 
-                    <div class="divForm3">
+                    <div class="divFormLabelDiv">
                         <label for="numeroAscensor">
                             Número de ascensor
                         </label>
@@ -132,7 +132,7 @@
                         <input type="text" name="tipoControl" id="tipoControl">
                     </div>
 
-                    <div class="divForm2">
+                    <div class="divFormPDiv">
                         <p>Cables a tracción</p>
                         <div class="divFormInterno">
                             <label for="cablesTraccion">
@@ -167,7 +167,7 @@
                         <input type="text" name="metodoControl"     id="metodoControl">
                     </div>
 
-                    <div class="divForm2">
+                    <div class="divFormPDiv">
                         <p>Carga útil de la cabina</p>
                         <div class="divFormInterno">
                             <label for="numeroPasajeros">
@@ -202,7 +202,9 @@
                         <input type="text" name="huincha" id="huincha">
                     </div>
 
-                    <input class="formBoton" type="submit" value="Enviar">
+                    <button class="formBoton" type="submit">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
                 </div>
             </form>
         </section>
@@ -222,27 +224,33 @@
                 <b>Criterio de aplicación:</b>
                 Instituto Nacional de Normalización INN: Nch 3365/2015 "Requisitos para equipos de transporte vertical- Ascensores y montacargas inclinados o funiculares".
             </p>
-            <div class="divForm">
-                <p>
-                    <b>Revisión aplicación:</b>
-                </p>
-                <label for="si">
-                    Sí -
-                </label>
-                <input type="checkbox" name="si" id="si">
-                <label for="no">
-                    No -
-                </label>
-                <input type="checkbox" name="no" id="no">
-            </div>
-            <div class="divFormTexto">
-                <p>
-                    <label for="nombreResponsable">Yo, </label> 
-                    <input type="text" name="nombreResponsable" id="nombreResponsable"> ,
-                    <label for="rutResponsable">Rut.: </label>
-                    <input type="text" name="rutResponsable" id="rutResponsable"> ,
-                    declaro que no tengo ningún tipo de vínculo y/o interés con el edificio a certificar y que está declarado en la hoja Nº 2 de este registro de inspección. Además, declaro que ejecuto esta inspección bajo completa confidencialidad del proceso.
-                </p>
+            <div class="divFormS">
+                <div class="divForm">
+                    <p>
+                        <b>Revisión aplicación:</b>
+                    </p>
+                    <label for="si">
+                        Sí -
+                    </label>
+                    <input type="checkbox" name="si" id="si">
+                    <label for="no">
+                        No -
+                    </label>
+                    <input type="checkbox" name="no" id="no">
+                </div>
+                <div class="divFormTexto">
+                    <p>
+                        <label for="nombreResponsable">Yo, </label> 
+                        <input type="text" name="nombreResponsable" id="nombreResponsable"> ,
+                        <label for="rutResponsable">Rut.: </label>
+                        <input type="text" name="rutResponsable" id="rutResponsable"> ,
+                        declaro que no tengo ningún tipo de vínculo y/o interés con el edificio a certificar y que está declarado en la hoja Nº 2 de este registro de inspección. Además, declaro que ejecuto esta inspección bajo completa confidencialidad del proceso.
+                    </p>
+                </div>
+
+                <button class="formBoton" type="submit">
+                    <i class="fa-solid fa-check"></i>
+                </button>
             </div>
         </section>
 
@@ -255,7 +263,7 @@
             <form class="formGral" action="" method="post" id="formCaracteristicasInstalacionGenerales">
                 <div class="formFlex">
                     <h3>
-                        CARACTERÍSTICAS GENERALES DEL PROYECTO
+                        I. CARACTERÍSTICAS GENERALES DEL PROYECTO
                     </h3>
 
                     <div class="divForm">
@@ -306,17 +314,25 @@
                         </label>
                         <input type="text" name="normaAplicada" id="normaAplicada">
                     </div>
+
+                    <button class="formBoton" type="submit">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
                 </div>
             </form>
 
             <form class="formGral" action="" method="post" id="formCaracteristicasParticulares">
                 <div class="formFlex">
                     <h3>
-                        CARACTERÍSTICAS PARTICULARES
+                        II. CARACTERÍSTICAS PARTICULARES DEL PROYECTO
                     </h3>
-                    <div class="divForm">
-                        <p>Características</p>
-                        <p>Ascensores eléctricos</p>
+                    <div class="divFormPP">
+                        <p>
+                            <b>Características</b>
+                        </p>
+                        <p>
+                            <b>Ascensores eléctricos</b>
+                        </p>
                     </div>
 
                     <div class="divForm">
@@ -494,13 +510,263 @@
                         <input type="date" name="fechaHastaContrato" id="fechaHastaContrato">
                     </div>
 
-                    <p>
-                        Observaciones:
-                    </p>
+                    <div class="divFormObservaciones">
+                        <label for="observaciones">
+                            <b>Observaciones:</b>
+                        </label>
+                        <input type="text" name="observaciones" id="observaciones"> 
+                    </div>
+
+                    <button class="formBoton" type="submit">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
+                </div>
+            </form>
+
+            <form class="formGral" action="" method="post" id="formCaracteristicasParticularesEquipo">
+                <div class="formFlex">
+                    <h3>
+                        III. CARACTERÍSTICAS PARTICULARES DEL EQUIPO
+                    </h3>
+                    <div class="divFormPP">
+                        <p>
+                            <b>Características</b>
+                        </p>
+                        <p>
+                            <b>Ascensores eléctricos</b>
+                        </p>
+                    </div>
+
+                    <div class="divForm">
+                        <label for="uso">
+                            Uso
+                        </label>
+                        <input type="text" name="uso" id="uso">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="marcaElevador">
+                            Marca del elevador
+                        </label>
+                        <input type="text" name="marcaElevador" id="marcaElevador">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="modeloElevador">
+                            Modelo del elevador
+                        </label>
+                        <input type="text" name="modeloElevador" id="modeloElevador">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="marcaMotor">
+                            Marca del motor
+                        </label>
+                        <input type="text" name="marcaMotor" id="marcaMotor">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="tipoElevador">
+                            Tipo de elevador
+                        </label>
+                        <input type="text" name="tipoElevador" id="tipoElevador">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="sistemaElevacion">
+                            Sistema de elevación
+                        </label>
+                        <input type="text" name="sistemaElevacion" id="sistemaElevacion">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="velocidadNominal">
+                            Velocidad nominal
+                        </label>
+                        <input type="text" name="velocidadNominal" id="velocidadNominal">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="velocidadActuacion">
+                            Velocidad de actuación del limitador del velocidad
+                        </label>
+                        <input type="text" name="velocidadActuacion" id="velocidadActuacion">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="diametroCables">
+                            Diámetro de clabes de tracción
+                        </label>
+                        <input type="text" name="diametroCables" id="diametroCables">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="capacidadCargaNominal">
+                            Capacidad de carga nominal
+                        </label>
+                        <input type="text" name="capacidadCargaNominal" id="capacidadCargaNominal">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="tensionServicio">
+                            Tensión de servicio
+                        </label>
+                        <input type="text" name="tensionServicio" id="tensionServicio">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="potenciaMotor">
+                            Potencia del motor
+                        </label>
+                        <input type="text" name="potenciaMotor" id="potenciaMotor">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="cuadroControl">
+                            Cuadro de control
+                        </label>
+                        <input type="text" name="cuadroControl" id="cuadroControl">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="frecuencia">
+                            Frecuencia
+                        </label>
+                        <input type="text" name="frecuencia" id="frecuencia">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="recorrido">
+                            Recorrido
+                        </label>
+                        <input type="text" name="recorrido" id="recorrido">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="salaMaquinas">
+                            Sala de máquinas
+                        </label>
+                        <input type="text" name="salaMaquinas" id="salaMaquinas">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="numeroParadas">
+                            Nº de paradas
+                        </label>
+                        <input type="number" name="numeroParadas" id="numeroParadas">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="accesos">
+                            Accesos
+                        </label>
+                        <input type="text" name="accesos" id="accesos">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="añoInstalacion">
+                            Año de instalación
+                        </label>
+                        <input type="number" name="añoInstalacion" id="añoInstalacion">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="añoModernizacion">
+                            Año de modernización
+                        </label>
+                        <input type="number" name="añoModernizacion" id="añoModernizacion">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="nombreEmpresaInstaladora">
+                            Nombre de la empresa instaladora
+                        </label>
+                        <input type="text" name="nombreEmpresaInstaladora" id="nombreEmpresaInstaladora">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="nombreEmpresaMantenedora">
+                            Nombre de la empresa mantenedora
+                        </label>
+                        <input type="text" name="nombreEmpresaMantenedora" id="nombreEmpresaMantenedora">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="rutEmpresaMantenedora">
+                            Rut de la empresa mantenedora
+                        </label>
+                        <input type="text" name="rutEmpresaMantenedora" id="rutEmpresaMantenedora">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="fechaDesdeContrato">
+                            Fecha desde el contrato de MMTT
+                        </label>
+                        <input type="date" name="fechaDesdeContrato" id="fechaDesdeContrato">
+                    </div>
+
+                    <div class="divForm">
+                        <label for="fechaHastaContrato">
+                            Fecha hasta el contrato de MMTT
+                        </label>
+                        <input type="date" name="fechaHastaContrato" id="fechaHastaContrato">
+                    </div>
+
+                    <div class="divFormObservaciones">
+                        <label for="observaciones">
+                            <b>Observaciones:</b>
+                        </label>
+                        <input type="text" name="observaciones" id="observaciones"> 
+                    </div>
+
+                    <button class="formBoton" type="submit">
+                        <i class="fa-solid fa-check"></i>
+                    </button>
                 </div>
             </form>
         </section>
 
+        <!-- CAJA DE ELEVADORES -->
+        <section class="sectionForm" id="cajaElevadores">
+            <h2>
+                1. CAJA DE ELEVADORES
+            </h2>
+
+            <form class="formCuadro" action="" method="post" id="formCajaElevadores">
+                <div class="formFlex">
+                    <div class="divFormContenedor">
+                        <p>
+                            <b>NCh</b>
+                        </p>
+                        <p>
+                            <b>DISPOSICIONES</b>
+                        </p>
+                        <p>
+                            <b>Cumple</b>
+                        </p>
+                        <p>
+                            <b>No cumple</b>
+                        </p>
+                        <p>
+                            <b>Falta grave</b>
+                        </p>
+                        <p>
+                            <b>Falta leve</b>
+                        </p>
+                        <p>
+                            <b>1</b>
+                        </p>
+                        <p>
+                            <b>2</b>
+                        </p>
+                        <p>
+                            <b>3</b>
+                        </p>
+                    </div>
+                </div>
+
+            </form>
+        </section>
     </div>
 </body>
 </html>

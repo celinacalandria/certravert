@@ -32,21 +32,40 @@
         margin: 0;
         padding: 0.5rem;
     }
-    .divForm{
-        @include flex;
-        flex-direction: row;
-        @include letraPrincipal;
-        label{
-            padding: 0.5rem;
+    .divFormS{
+        padding-bottom: 0.5rem;
+        .divForm{
+            @include flex;
+            flex-direction: row;
+            @include letraPrincipal;
+            label{
+                margin: 0;
+                padding: 0.5rem;
+            }
         }
-    }
-    .divFormTexto{
-        input{
-            border: none;
-            border-bottom: 1px solid $verde;
-            padding: 0;
+        .divFormTexto{
+            input{
+                border: none;
+                border-bottom: 1px solid $verde;
+                @include cero;
+            }
         }
-    }
+        .formBoton{
+            @include centrado;
+            margin-top: 1rem;
+            border: 1px $verde solid;
+            border-radius: 2rem;
+            background-color: $verde;
+            color: $blanco;
+            font-size: 1.5rem;
+            width: 2.5rem;
+            @include letraPrincipal;
+            &:hover{
+                color: $verde;
+                background-color: $blanco;
+            }
+        }
+    }   
 }
 
 .sectionForm{
@@ -60,11 +79,12 @@
         color: $azul;
         text-align: center;
         font-weight: 700;
-        border-bottom: 1px solid $azul;
+        border-bottom: 2px solid $azul;
         padding: 0.5rem;
     }
     .formGral{
     font-size: 1rem;
+    padding-bottom: 1rem;
         .formFlex{
             padding: 0.5rem 0;
             h3{
@@ -74,6 +94,7 @@
                 padding: 0.5rem;
                 text-align: center;
                 font-weight: 600;
+                border-bottom: 1px solid $verde;
             }
             .divForm{
                 @include cero;
@@ -96,7 +117,40 @@
                     grid-area: input;
                 }
             }
-            .divForm2{
+            .divFormPP{
+                @include cero;
+                border-bottom: 1px solid $verde;
+                display: grid;
+                grid-template-columns: 2fr 4fr;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                    "p p";
+                p{
+                    @include cero;
+                    padding: 0.5rem;
+                    text-align: center;
+                }
+            }
+            .divFormObservaciones{
+                margin: 0;
+                padding-top: 0.5rem;
+                border-top: 1px solid $verde;
+                display: grid;
+                grid-template-columns: 2fr 4fr;
+                grid-template-rows: auto;
+                grid-template-areas: 
+                    "label input";
+                label{
+                    @include cero;
+                    padding-left: 0.5rem;
+                    grid-area: label;
+                }
+                input{
+                    @include cero;
+                    grid-area: input;
+                }
+            }
+            .divFormPDiv{
                 @include cero;
                 display: grid;  
                 grid-template-columns: 2fr 4fr;
@@ -132,7 +186,7 @@
                     }
                 }
             }   
-            .divForm3{
+            .divFormLabelDiv{
                 display: grid;
                 grid-template-columns: 2fr 4fr;
                 grid-template-rows: auto;
@@ -165,17 +219,26 @@
             }
             .formBoton{
                 @include centrado;
-                margin-top: 0.5rem;
-                margin-bottom: 0.5rem;
+                margin-top: 1rem;
                 border: 1px $verde solid;
+                border-radius: 2rem;
                 background-color: $verde;
                 color: $blanco;
-                font-size: 1rem;
+                font-size: 1.5rem;
+                width: 2.5rem;
                 @include letraPrincipal;
                 &:hover{
                     color: $verde;
                     background-color: $blanco;
                 }
+            }
+        }
+    }
+    .formCuadro{
+        .formFlex{
+            .divFormContenedor{
+                @include flex;
+                justify-content: space-around;
             }
         }
     }
